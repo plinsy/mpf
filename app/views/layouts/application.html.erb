@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Mpf</title>
+    <title><%= controller_name.upcase %> <%= action_name.capitalize %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/head' %>
+    <% javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/footer' %>
   </head>
 
   <body>
+    <% if controller_name == "home" %>
+      <%= render 'home/header' %>
+    <% end %>
     <%= yield %>
+    <% if controller_name == "home" %>
+      <% render 'home/footer' %>
+    <% end %>
   </body>
 </html>
