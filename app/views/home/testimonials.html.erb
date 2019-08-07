@@ -1,122 +1,111 @@
+<% content_for :head do %>
+<link rel="stylesheet" type="text/css" href="/assets/styles/testimonials.css">
+<link rel="stylesheet" type="text/css" href="/assets/styles/testimonials_responsive.css">
+<% end %>
+<% content_for :foot do %>
+<script src="/assets/js/testimonials.js"></script>
+<% end %>
 <div class="super_container">
-
-	<div class="content_container">
-		<div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
-
+    <div class="content_container">
+        <div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
             <%= render 'info' %>
-
-			<!-- Main Content -->
-
-			<div class="main_content">
-				<div class="main_title_container d-flex flex-column align-items-start justify-content-end">
-					<div class="main_subtitle">What clients say</div>
-					<div class="main_title">Testimonials</div>
-				</div>
-				<div class="main_content_scroll mCustomScrollbar" data-mcs-theme="minimal-dark">
-					<!-- Testimonials -->
-
-					<div class="testimonials">
-						
-						<!-- Testimonials Slider -->
-						<div class="test_slider_container">
-							<div class="owl-carousel owl-theme test_slider">
-								
-								<!-- Slide -->
-								<div class="owl-item test_item">
-									<div class="test_title">5* Functionality</div>
-									<div class="test_text">
-										<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-									</div>
-									<div class="test_image"><a href="/assets/#"><img src="/assets/images/test_1.jpg" alt=""></a></div>
-									<div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
-								</div>
-
-								<!-- Slide -->
-								<div class="owl-item test_item">
-									<div class="test_title">Fast & Friendly Guy</div>
-									<div class="test_text">
-										<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-									</div>
-									<div class="test_image"><a href="/assets/#"><img src="/assets/images/test_2.jpg" alt=""></a></div>
-									<div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
-								</div>
-
-								<!-- Slide -->
-								<div class="owl-item test_item">
-									<div class="test_title">Great to work with</div>
-									<div class="test_text">
-										<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-									</div>
-									<div class="test_image"><a href="/assets/#"><img src="/assets/images/test_3.jpg" alt=""></a></div>
-									<div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
-								</div>
-
-								<!-- Slide -->
-								<div class="owl-item test_item">
-									<div class="test_title">5* Functionality</div>
-									<div class="test_text">
-										<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-									</div>
-									<div class="test_image"><a href="/assets/#"><img src="/assets/images/test_1.jpg" alt=""></a></div>
-									<div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
-								</div>
-
-								<!-- Slide -->
-								<div class="owl-item test_item">
-									<div class="test_title">Fast & Friendly Guy</div>
-									<div class="test_text">
-										<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-									</div>
-									<div class="test_image"><a href="/assets/#"><img src="/assets/images/test_2.jpg" alt=""></a></div>
-									<div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
-								</div>
-
-								<!-- Slide -->
-								<div class="owl-item test_item">
-									<div class="test_title">Great to work with</div>
-									<div class="test_text">
-										<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-									</div>
-									<div class="test_image"><a href="/assets/#"><img src="/assets/images/test_3.jpg" alt=""></a></div>
-									<div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
-								</div>
-
-								<!-- Slide -->
-								<div class="owl-item test_item">
-									<div class="test_title">5* Functionality</div>
-									<div class="test_text">
-										<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-									</div>
-									<div class="test_image"><a href="/assets/#"><img src="/assets/images/test_1.jpg" alt=""></a></div>
-									<div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
-								</div>
-
-								<!-- Slide -->
-								<div class="owl-item test_item">
-									<div class="test_title">Fast & Friendly Guy</div>
-									<div class="test_text">
-										<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-									</div>
-									<div class="test_image"><a href="/assets/#"><img src="/assets/images/test_2.jpg" alt=""></a></div>
-									<div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
-								</div>
-
-								<!-- Slide -->
-								<div class="owl-item test_item">
-									<div class="test_title">Great to work with</div>
-									<div class="test_text">
-										<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-									</div>
-									<div class="test_image"><a href="/assets/#"><img src="/assets/images/test_3.jpg" alt=""></a></div>
-									<div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-					
-			</div>
-		</div>
-
-</div>
+            <!-- Main Content -->
+            <div class="main_content">
+                <div class="main_title_container d-flex flex-column align-items-start justify-content-end">
+                    <div class="main_subtitle">What clients say</div>
+                    <div class="main_title">Testimonials</div>
+                </div>
+                <div class="main_content_scroll mCustomScrollbar" data-mcs-theme="minimal-dark">
+                    <!-- Testimonials -->
+                    <div class="testimonials">
+                        <!-- Testimonials Slider -->
+                        <div class="test_slider_container">
+                            <div class="owl-carousel owl-theme test_slider">
+                                <!-- Slide -->
+                                <div class="owl-item test_item">
+                                    <div class="test_title">5* Functionality</div>
+                                    <div class="test_text">
+                                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
+                                    </div>
+                                    <div class="test_image"><a href="/assets/#"><img src="/assets/images/test_1.jpg" alt=""></a></div>
+                                    <div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
+                                </div>
+                                <!-- Slide -->
+                                <div class="owl-item test_item">
+                                    <div class="test_title">Fast & Friendly Guy</div>
+                                    <div class="test_text">
+                                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
+                                    </div>
+                                    <div class="test_image"><a href="/assets/#"><img src="/assets/images/test_2.jpg" alt=""></a></div>
+                                    <div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
+                                </div>
+                                <!-- Slide -->
+                                <div class="owl-item test_item">
+                                    <div class="test_title">Great to work with</div>
+                                    <div class="test_text">
+                                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
+                                    </div>
+                                    <div class="test_image"><a href="/assets/#"><img src="/assets/images/test_3.jpg" alt=""></a></div>
+                                    <div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
+                                </div>
+                                <!-- Slide -->
+                                <div class="owl-item test_item">
+                                    <div class="test_title">5* Functionality</div>
+                                    <div class="test_text">
+                                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
+                                    </div>
+                                    <div class="test_image"><a href="/assets/#"><img src="/assets/images/test_1.jpg" alt=""></a></div>
+                                    <div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
+                                </div>
+                                <!-- Slide -->
+                                <div class="owl-item test_item">
+                                    <div class="test_title">Fast & Friendly Guy</div>
+                                    <div class="test_text">
+                                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
+                                    </div>
+                                    <div class="test_image"><a href="/assets/#"><img src="/assets/images/test_2.jpg" alt=""></a></div>
+                                    <div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
+                                </div>
+                                <!-- Slide -->
+                                <div class="owl-item test_item">
+                                    <div class="test_title">Great to work with</div>
+                                    <div class="test_text">
+                                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
+                                    </div>
+                                    <div class="test_image"><a href="/assets/#"><img src="/assets/images/test_3.jpg" alt=""></a></div>
+                                    <div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
+                                </div>
+                                <!-- Slide -->
+                                <div class="owl-item test_item">
+                                    <div class="test_title">5* Functionality</div>
+                                    <div class="test_text">
+                                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
+                                    </div>
+                                    <div class="test_image"><a href="/assets/#"><img src="/assets/images/test_1.jpg" alt=""></a></div>
+                                    <div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
+                                </div>
+                                <!-- Slide -->
+                                <div class="owl-item test_item">
+                                    <div class="test_title">Fast & Friendly Guy</div>
+                                    <div class="test_text">
+                                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
+                                    </div>
+                                    <div class="test_image"><a href="/assets/#"><img src="/assets/images/test_2.jpg" alt=""></a></div>
+                                    <div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
+                                </div>
+                                <!-- Slide -->
+                                <div class="owl-item test_item">
+                                    <div class="test_title">Great to work with</div>
+                                    <div class="test_text">
+                                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
+                                    </div>
+                                    <div class="test_image"><a href="/assets/#"><img src="/assets/images/test_3.jpg" alt=""></a></div>
+                                    <div class="test_info"><a href="/assets/#">Diane Smith</a><span>Customer</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

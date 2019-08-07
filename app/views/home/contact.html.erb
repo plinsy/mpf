@@ -1,60 +1,58 @@
+<% content_for :head do %>
+<link rel="stylesheet" type="text/css" href="/assets/styles/contact.css">
+<link rel="stylesheet" type="text/css" href="/assets/styles/contact_responsive.css">
+<% end %>
+<% content_for :foot do %>
+<script src="/assets/js/contact.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+<% end %>
 <div class="super_container">
-
-	<div class="content_container">
-		<div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
-
+    <div class="content_container">
+        <div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
             <%= render 'info' %>
-
-			<!-- Main Content -->
-
-			<div class="main_content">
-				<div class="main_title_container d-flex flex-column align-items-start justify-content-end">
-					<div class="main_subtitle">What clients say</div>
-					<div class="main_title">Contact me</div>
-				</div>
-				<div class="main_content_scroll mCustomScrollbar" data-mcs-theme="minimal-dark">
-					
-					<!-- Contact -->
-
-					<div class="contact">
-						<div class="container-fluid">
-							<div class="row">
-								
-								<!-- Contact Form -->
-								<div class="col-xl-6">
-									<div class="contact_text">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit ame. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien.</p>
-									</div>
-									<div class="contact_form_container">
-										<form action="#" id="contact_form" class="contact_form clearfix">
-											<div><input type="text" class="contact_input" placeholder="Name" required="required"></div>
-											<div><input type="email" class="contact_input" placeholder="E-mail" required="required"></div>
-											<input type="text" class="contact_input" placeholder="Subject" required="required">
-											<textarea class="contact_input contact_textarea" placeholder="Message" required="required"></textarea>
-											<button class="contact_button">Send Message</button>
-										</form>
-									</div>
-								</div>
-
-								<!-- Contact Map -->
-								<div class="col-xl-6">
-									<div class="contact_map">
-										<!-- Google Map -->
-										<div class="map">
-											<div id="google_map" class="google_map">
-												<div class="map_container">
-													<div id="map"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-					
-			</div>
-		</div>
-</div>
+            <!-- Main Content -->
+            <div class="main_content">
+                <div class="main_title_container d-flex flex-column align-items-start justify-content-end">
+                    <div class="main_subtitle">What clients say</div>
+                    <div class="main_title">Contact me</div>
+                </div>
+                <div class="main_content_scroll mCustomScrollbar" data-mcs-theme="minimal-dark">
+                    <!-- Contact -->
+                    <div class="contact">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <!-- Contact Form -->
+                                <div class="col-xl-6">
+                                    <div class="contact_text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit ame. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien.</p>
+                                    </div>
+                                    <div class="contact_form_container">
+                                        <form action="#" id="contact_form" class="contact_form clearfix">
+                                            <div><input type="text" class="contact_input" placeholder="Name" required="required"></div>
+                                            <div><input type="email" class="contact_input" placeholder="E-mail" required="required"></div>
+                                            <input type="text" class="contact_input" placeholder="Subject" required="required">
+                                            <textarea class="contact_input contact_textarea" placeholder="Message" required="required"></textarea>
+                                            <button class="contact_button">Send Message</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- Contact Map -->
+                                <div class="col-xl-6">
+                                    <div class="contact_map">
+                                        <!-- Google Map -->
+                                        <div class="map">
+                                            <div id="google_map" class="google_map">
+                                                <div class="map_container">
+                                                    <div id="map"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
